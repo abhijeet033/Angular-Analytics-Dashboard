@@ -1,0 +1,25 @@
+<mat-toolbar class="toolbar">
+    <img src="../assets/favicon.ico" alt="">
+   <div> ngular Analytics Dashboard</div>
+    <!-- <img class="logo"src="../assets/quantiphi-logo.png" alt=""> -->
+</mat-toolbar>
+
+<mat-tab-group >
+    <mat-tab class="tab" label="Indian Premier League Analysis">
+        <app-screen1></app-screen1>
+    </mat-tab>
+    <mat-tab class="tab" label="Indian premier League Live Analysis">
+        <app-screen2></app-screen2>
+
+    </mat-tab>
+    <mat-tab class="tab" label="String Analysis">
+        <app-screen3></app-screen3>
+
+    </mat-tab>
+</mat-tab-group>
+
+<!-- <app-screen2></app-screen2><br> -->
+<!-- <app-screen2></app-screen2><br>
+<app-screen3></app-screen3><br> -->
+
+<router-outlet></router-outlet>

@@ -1,0 +1,35 @@
+.str{
+    min-width:50%
+}
+.example-full-width{
+    margin-left:25%;
+    width:50%;
+}
+input{
+    text-align: center
+}
+button{
+    height:50px;
+    font-family: Bold;
+    font-size: 20px;
+    margin-left: 43%;
+    align-content: center;
+    background:#213f81;
+    color: white;
+    border: 1px solid ;
+    border-radius: 8px
+}
+.card_holder{
+    width:50%;
+    float:left
+}
+.card{
+    background: #3db685;
+    width:80%;
+    margin-left:8px;
+    color:white
+}
+.chart{
+    max-width: 50%;
+    float: left;
+}

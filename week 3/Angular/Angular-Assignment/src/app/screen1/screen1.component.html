@@ -1,0 +1,48 @@
+<br><br>
+<mat-form-field class="select">
+    <mat-label>Select Team</mat-label>
+    <mat-select [(ngModel)]="selectedTeam"  (selectionChange)="getDetails(selectedTeam,selectedCategory)">
+      <mat-option value="CSK">Chennai Super Kings</mat-option>
+      <mat-option value="SRH">Sunrisers Hyderabad</mat-option>
+      <mat-option value="KXIP">Kings XI Punjab</mat-option>
+      <mat-option value="KKR">Kolkata Knight Riders</mat-option>
+      <mat-option value="MI">Mumbai Indians</mat-option>
+      <mat-option value="DD">Delhi Daredevils</mat-option>
+      <mat-option value="RR">Rajasthan Royals</mat-option>
+      <mat-option value="RCB">Royal Challengers Banglore</mat-option>
+    </mat-select>
+  </mat-form-field>
+<!-- <select #team (change)=getDetails(team.value,y.value)>
+
+    <option value="CSK">Chennai Super Kings</option>
+    <option value="SRH">Sunriser Hyderabad</option>
+    <option value="KXIP">Kings XI Punjab</option>
+    <option value="KKR">Kolkata Knight Riders</option>
+    <option value="MI">Mumbai Indians</option>
+    <option value="DD">Delhi Daredevils</option>
+    <option value="RR">Rajasthan Royals</option>
+    <option value="RCB">Royal Challenger Banglore</option>
+</select> -->
+
+
+<mat-form-field class="select2">
+    <mat-label>Select Category</mat-label>
+    <mat-select [(ngModel)]="selectedCategory"  (selectionChange)="getDetails(selectedTeam,selectedCategory)">
+      <mat-option value="Runs">Runs</mat-option>
+      <mat-option value="Wickets">Wickets</mat-option>
+      <mat-option value="Catches">Catches</mat-option>
+      <mat-option value="Run Outs">Runouts</mat-option>
+    </mat-select>
+  </mat-form-field><br><br>
+<!-- <select #y (change)=getDetails(team.value,y.value)>
+    <option value="Runs">Runs</option>
+    <option value="Wickets">Wickets</option>
+    <option value="Catches">Catches</option>
+    <option value="Run Outs">Runouts</option>
+</select><br><br> -->
+<!-- <button (click)=getDetails(team.value,y.value)>Filter</button>
+<button (click)="add()">Add Point!</button><br> -->
+<div class="chart" [chart]="chart"></div>
+<div class="chart" [chart]="chart2"></div>
+<div class="chart" [chart]="chart3"></div>
+<div class="chart" [chart]="chart4"></div>

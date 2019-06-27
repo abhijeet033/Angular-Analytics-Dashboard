@@ -1,0 +1,22 @@
+body{
+    width:100%
+}
+.chart{
+  
+    max-width:50%;
+    float:left;
+}
+.toolbar{
+    background:#213f81;
+    color:white;
+ 
+}
+.tab{
+    background:#3db685;
+    color:#3db685;
+    margin:40%;
+}
+.logo{
+    float:right;
+    height: 50%;
+}
