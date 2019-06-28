@@ -16,11 +16,11 @@ button{
     align-content: center;
     background:#213f81;
     color: white;
-    border: 1px solid ;
+    border: 1px  ;
     border-radius: 8px
 }
 .card_holder{
-    width:50%;
+    width:45%;
     float:left
 }
 .card{

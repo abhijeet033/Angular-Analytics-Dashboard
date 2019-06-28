@@ -78,19 +78,24 @@ export class Screen3Component implements OnInit {
 
   largestWord(str: String) {
 
-    var arr = Array.from(str.split(" "));
-    var largest = arr.filter(element=>{
-        return element.toLowerCase()!="a" && element.toLowerCase()!="an" && element.toLowerCase()!="the"
-    })
-    if(largest.length>0){
-      var largest_len=largest.reduce((a, b) => {
-        return a.length >= b.length ? a : b
-          })
-    }else{
-     return 0
-    }
+    // var arr = Array.from(str.split(" "));
+    // var largest = arr.filter(element=>{
+    //     return element.toLowerCase()!="a" && element.toLowerCase()!="an" && element.toLowerCase()!="the"
+    // })
+    // if(largest.length>0){
+    //   var largest_len=largest.reduce((a, b) => {
+    //     return a.length >= b.length ? a : b
+    //       })
+    // }else{
+    //  return 0
+    // }
      
-    return largest_len.length
+    var arr=Array.from(str.split(" "));
+    var largest=arr.reduce((acc,curr)=>{
+      return acc.length>=curr.length?acc:curr
+    })
+    return largest.length
+  
   }
   
 
@@ -104,9 +109,14 @@ export class Screen3Component implements OnInit {
       var smallest_len=smallest.reduce((a, b) => {
         return a.length <= b.length ? a : b
           })
-    }else{
+    }
+    else if(smallest.length==1){
+        return smallest[0].length
+    }
+    else{
      return 0
     }
+    console.log(smallest_len)
     return smallest_len.length
   }
 
@@ -127,7 +137,7 @@ export class Screen3Component implements OnInit {
         'Vowel Count',
         'Article Count',
         'Largest Word Length',
-        'Smallest Word Len'
+        'Smallest Word Length'
       ],
       title:
       {

@@ -1,16 +1,16 @@
-<br><br>
+<br>
 <mat-form-field class="example-full-width">
     <!-- <textarea #input matInput placeholder="Leave a comment"></textarea> -->
     <input type="text" #input matInput placeholder="Leave a comment">
 </mat-form-field>
 <br>
 <button (click)="checkDetails(input.value)">Check Details</button>
-<br><br><br>
+<br><br>
 <div *ngIf="showcard" class="card_holder">
     <mat-card class="card">Word Count of the given String : {{word_count}}</mat-card> <br>
     <mat-card class="card">Vowel Count of the given String : {{vowel_count}}</mat-card> <br>
     <mat-card class="card">Article Count of the given String : {{article_count}}</mat-card> <br>
-    <mat-card class="card">Largest word in the given string : {{lrg_count}}</mat-card> <br>
-    <mat-card class="card">smallest word in the given string : {{sml_count}}</mat-card> <br>
+    <mat-card class="card">Largest word Length  in the given string : {{lrg_count}}</mat-card> <br>
+    <mat-card class="card">smallest word Length in the given string : {{sml_count}}</mat-card> <br>
 </div>
 <div *ngIf="showcard" class="chart" [chart]="chart"></div>

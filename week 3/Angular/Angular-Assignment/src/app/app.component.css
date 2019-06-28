@@ -9,6 +9,7 @@ body{
 .toolbar{
     background:#213f81;
     color:white;
+    width:100%
  
 }
 .tab{
@@ -19,4 +20,5 @@ body{
 .logo{
     float:right;
     height: 50%;
+    align-items: inherit;
 }
